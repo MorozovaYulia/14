@@ -3,17 +3,16 @@ using namespace std;
 int main()
 {
     const int N = 10;
-    int K, L;
-    float sum;
-    int arr[N];
-    cout << "Enter K, L: " << endl;
+    int K, L, A[N];
+    float s;
+    cout << "Enter K, L: \n";
     cin >> K >> L;
     for (int i = 0; i < N; i++)
-        arr[i] = i;
-    sum = 0;
+        A[i] = i;
+    s = 0;
     for (int i = K; i <= L; i++) {
-        sum += arr[i];
+        s += A[i];
     }
-    sum = sum / (L - K + 1);
-    cout << sum << endl;
+    s = s / (L - K + 1);
+    cout << s;
 }
