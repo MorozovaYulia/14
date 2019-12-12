@@ -3,18 +3,17 @@ using namespace std;
 int main()
 {
     const int N = 10;
-    int arr[N];
-    int d, c;
+    int A[N], a, b;
     for (int i = 0; i < N; i++)
-        cin >> arr[i];
-    d = arr[1] - arr[0];
-    c = 0;
+        cin >> A[i];
+    a = A[1] - A[0];
+    b = 0;
     for (int i = 1; i < N; i++) {
-        if (arr[i] - arr[i - 1] == d)
-            c++;
+        if (A[i] - A[i - 1] == A)
+            b++;
     }
-    if (c == N - 1)
-        cout << d << endl;
+    if (b == N - 1)
+        cout << a << " \n";
     else
-        cout << 0 << endl;
+        cout << 0 << " \n";
 }
